@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("", "", "", "");
+$mysqli = new mysqli("localhost", "root", "root", "newdb");
 
 if ($mysqli->connect_error) {
   die("Connection failed: " . $mysqli->connect_error);

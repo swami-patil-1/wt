@@ -7,11 +7,11 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-  host: "",
-  user: "",
+  host: "localhost",
+  user: "root",
   port: 8889,
-  password: "",
-  database: "",
+  password: "root",
+  database: "newdb",
 });
 
 app.get("/api/books", (req, res) => {
